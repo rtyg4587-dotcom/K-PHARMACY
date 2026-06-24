@@ -6,7 +6,7 @@
 <title>K-Pharmacy Guide — know what to buy at Korean pharmacies</title>
 <meta name="description" content="Pharmacist-picked Korean beauty for your skin concern. Compare products, see ratings, and find them at a verified pharmacy near you — in English, 日本語, and 中文." />
 <meta name="theme-color" content="#15604A" />
-<link rel="canonical" href="https://rtyg4587-dotcom.github.io/K-PHARMACY/" />
+<link rel="canonical" href="https://YOUR-USERNAME.github.io/REPO/" />
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='96' fill='%2315604A'/><g fill='%23ffffff'><rect x='216' y='120' width='80' height='272' rx='30'/><rect x='120' y='216' width='272' height='80' rx='30'/></g><circle cx='344' cy='168' r='30' fill='%23E8795C'/></svg>" />
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png" />
@@ -22,16 +22,15 @@
 <meta property="og:site_name" content="K-Pharmacy Guide" />
 <meta property="og:title" content="K-Pharmacy Guide — know what to buy at Korean pharmacies" />
 <meta property="og:description" content="Pharmacist-picked Korean beauty, matched to your skin. Compare and find it at a pharmacy near you. EN · 日本語 · 中文." />
-<meta property="og:url" content="https://rtyg4587-dotcom.github.io/K-PHARMACY/" />
-<meta property="og:image" content="https://rtyg4587-dotcom.github.io/K-PHARMACY/og-image.png" />
+<meta property="og:url" content="https://YOUR-USERNAME.github.io/REPO/" />
+<meta property="og:image" content="https://YOUR-USERNAME.github.io/REPO/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="K-Pharmacy Guide" />
 <meta name="twitter:description" content="Know what to buy at Korean pharmacies — pharmacist-picked, matched to your skin, found near you." />
-<meta name="twitter:image" content="https://rtyg4587-dotcom.github.io/K-PHARMACY/og-image.png" />
+<meta name="twitter:image" content="https://YOUR-USERNAME.github.io/REPO/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -72,7 +71,7 @@
   .savedtotal{font-size:13px;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:11px 13px;margin-bottom:14px;}
   .savedtotal b{color:var(--ink);}
   .fx{color:var(--ink-soft);font-size:.92em;white-space:nowrap;}
-  .tierbadge{font-size:11px;font-weight:600;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line-2);border-radius:6px;padding:1px 5px;flex-shrink:0;align-self:flex-start;}
+  .tierbadge{font-size:11px;font-weight:600;color:var(--ink-soft);background:var(--surface);border:1px solid var(--line-2);border-radius:6px;padding:1px 5px;flex-shrink:0;}
   .fxnote{font-size:11px;color:var(--ink-soft);margin:6px 0 0;opacity:.85;}
   .phrate{color:#B8860B;font-weight:600;}
   .ph .sub .phrate{font-size:12px;}
@@ -143,12 +142,14 @@
 
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin-bottom:11px;transition:.12s;}
   .card:hover{border-color:var(--line-2);}
-  .card-row{display:flex;align-items:center;gap:12px;cursor:pointer;}
+  .card-row{display:flex;align-items:flex-start;gap:12px;cursor:pointer;}
   .rank{font-size:15px;font-weight:600;color:var(--ink-soft);width:16px;text-align:center;flex-shrink:0;}
   .card-body{flex:1;min-width:0;}
   .pname{font-size:15px;font-weight:600;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
   .prom{color:var(--ink-soft);font-size:12px;font-weight:400;}
   .pmeta{font-size:12px;color:var(--ink-soft);margin-top:2px;}
+  .card-tags{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:8px;}
+  .card-actions{display:flex;align-items:center;gap:8px;flex-shrink:0;}
   .badge{font-size:11px;font-weight:500;padding:3px 9px;border-radius:999px;white-space:nowrap;}
   .b-OTC{background:var(--otc-bg);color:var(--otc-tx);}
   .b-COSMETIC{background:var(--cos-bg);color:var(--cos-tx);}
@@ -495,7 +496,7 @@ const PRODUCTS=[
   {id:"kdpdrn",ko:"광동 PDRN 크림",rom:"Kwangdong PDRN Cream",maker:"Kwangdong",cat:"COSMETIC",onlineSale:false,concerns:["aging","barrier"],ingredientKey:"pdrn",
    ingredient:{EN:"PDRN",JA:"PDRN",ZH:"PDRN"},indication:{EN:"PDRN firming cream",JA:"PDRN ハリクリーム",ZH:"PDRN 紧致面霜"},strength:"daily",price:[60000,70000],pregSafe:true,views:4800,
    affiliates:[{name:"Olive Young Global",url:"https://global.oliveyoung.com"}]},
-  {id:"pdrnamp",ko:"메디큐브 PDRN 핑크 앰플",rom:"Medicube PDRN Pink Ampoule",maker:"Medicube (APR)",cat:"COSMETIC",concerns:["aging","barrier"],ingredientKey:"pdrn",rep:true,
+  {id:"pdrnamp",ko:"메디큐브 PDRN 핑크 앰플",rom:"Medicube PDRN Pink Ampoule",maker:"Medicube (APR)",cat:"COSMETIC",shopQ:"Medicube PDRN",malls:["yesstyle","oliveyoung","amazon","amazonjp","qoo10jp"],concerns:["aging","barrier"],ingredientKey:"pdrn",rep:true,
    ingredient:{EN:"Salmon PDRN 99% + peptides",JA:"サーモンPDRN99%＋ペプチド",ZH:"鲑鱼PDRN99%＋胜肽"},indication:{EN:"Home skin-booster ampoule (glow & firming)",JA:"自宅スキンブースター美容液（ツヤ・ハリ）",ZH:"居家水光安瓶（提亮紧致）"},strength:"daily",price:[28000,38000],pregSafe:true,views:13800,
    affiliates:[{name:"Olive Young Global",url:"https://global.oliveyoung.com"},{name:"YesStyle",url:"https://www.yesstyle.com"}]},
 
@@ -504,7 +505,7 @@ const PRODUCTS=[
    ingredient:{EN:"Centella asiatica extract",JA:"ツボクサ抽出物",ZH:"积雪草提取物"},indication:{EN:"Scar & soothing gel",JA:"傷あと・鎮静ジェル",ZH:"疤痕・舒缓凝胶"},strength:"daily",price:[6000,11000],pregSafe:true,views:8300},
   {id:"madecapowder",ko:"마데카솔 분말",rom:"Madecassol Powder",maker:"Dongkook",cat:"OTC",concerns:["scar","barrier"],ingredientKey:"centella-wound",
    ingredient:{EN:"Centella powder",JA:"ツボクサ末",ZH:"积雪草粉"},indication:{EN:"Wound-healing powder",JA:"傷治癒パウダー",ZH:"伤口愈合粉"},strength:"treat",price:[6000,10000],pregSafe:true,views:5200},
-  {id:"madeca24",ko:"센텔리안24 마데카크림",rom:"Centellian24 Madeca Cream",maker:"Dongkook",cat:"COSMETIC",concerns:["barrier","aging"],ingredientKey:"centella-cos",rep:true,
+  {id:"madeca24",ko:"센텔리안24 마데카크림",rom:"Centellian24 Madeca Cream",maker:"Dongkook",cat:"COSMETIC",shopQ:"Centellian24 Madeca",malls:["yesstyle","oliveyoung","amazon","amazonjp","qoo10jp"],concerns:["barrier","aging"],ingredientKey:"centella-cos",rep:true,
    ingredient:{EN:"TECA (centella)",JA:"TECA(ツボクサ)",ZH:"TECA(积雪草)"},indication:{EN:"Daily firming & soothing",JA:"ハリ・鎮静ケア",ZH:"紧致舒缓"},strength:"daily",price:[18000,30000],pregSafe:true,views:7600,
    affiliates:[{name:"Olive Young Global",url:"https://global.oliveyoung.com"}]},
   {id:"madecapharm",ko:"마데카파마시아 크림",rom:"Madeca Pharmacia Cream",maker:"Dongkook",cat:"COSMETIC",concerns:["barrier","aging"],ingredientKey:"centella-cos",onlineSale:false,
@@ -576,21 +577,21 @@ const PRODUCTS=[
    ingredient:{EN:"Exosome + salmon PDRN 10,000ppm",JA:"エクソソーム+サーモンPDRN 10,000ppm",ZH:"外泌体+鲑鱼PDRN 10,000ppm"},indication:{EN:"Brightening & firming exosome ampoule",JA:"ブライトニング・ハリ エクソソーム美容液",ZH:"提亮·紧致 外泌体精华"},strength:"daily",price:[78000,90000],pregSafe:false,views:5200},
 
   /* — Easydew (Daewoong, DW-EGF) — curated — */
-  {id:"edegfamp",ko:"이지듀 EGF 기미앰플",rom:"Easydew EGF Spot Ampoule",maker:"Daewoong",cat:"COSMETIC",concerns:["pigment"],ingredientKey:"dwegf-amp",
+  {id:"edegfamp",ko:"이지듀 EGF 기미앰플",rom:"Easydew EGF Spot Ampoule",maker:"Daewoong",cat:"COSMETIC",shopQ:"Easydew Melatoning ampoule",malls:["yesstyle","oliveyoung","amazon","amazonjp","qoo10jp"],mallLinks:{yesstyle:"https://www.yesstyle.com/en/easydew/list.html/bpt.299_bid.330726"},concerns:["pigment"],ingredientKey:"dwegf-amp",
    ingredient:{EN:"DW-EGF (epidermal growth factor)",JA:"DW-EGF（上皮成長因子）",ZH:"DW-EGF（表皮生长因子）"},indication:{EN:"No.1 spot & blemish ampoule",JA:"シミ・くすみ美容液（人気No.1）",ZH:"祛斑淡斑精华（人气No.1）"},strength:"daily",price:[27000,34000],pregSafe:false,views:5600},
-  {id:"edgluta",ko:"이지듀 멜라 글루타치온 기미크림",rom:"Easydew Mela Glutathione Cream",maker:"Daewoong",cat:"COSMETIC",concerns:["pigment"],ingredientKey:"gluta-cream-dw",
+  {id:"edgluta",ko:"이지듀 멜라 글루타치온 기미크림",rom:"Easydew Mela Glutathione Cream",maker:"Daewoong",cat:"COSMETIC",shopQ:"Easydew Melatoning cream",malls:["yesstyle","oliveyoung","amazon","amazonjp","qoo10jp"],mallLinks:{yesstyle:"https://www.yesstyle.com/en/easydew/list.html/bpt.299_bid.330726"},concerns:["pigment"],ingredientKey:"gluta-cream-dw",
    ingredient:{EN:"Glutathione + DW-EGF",JA:"グルタチオン+DW-EGF",ZH:"谷胱甘肽+DW-EGF"},indication:{EN:"Brightening spot cream",JA:"シミ・美白クリーム",ZH:"祛斑美白霜"},strength:"daily",price:[26000,34000],pregSafe:true,views:3800},
-  {id:"eddwcream",ko:"이지듀 DW-EGF 크림",rom:"Easydew DW-EGF Cream",maker:"Daewoong",cat:"COSMETIC",concerns:["barrier","aging"],ingredientKey:"dwegf-cream",
+  {id:"eddwcream",ko:"이지듀 DW-EGF 크림",rom:"Easydew DW-EGF Cream",maker:"Daewoong",cat:"COSMETIC",shopQ:"Easydew DW-EGF cream",malls:["yesstyle","oliveyoung","amazon","amazonjp","qoo10jp"],mallLinks:{yesstyle:"https://www.yesstyle.com/en/easydew/list.html/bpt.299_bid.330726"},concerns:["barrier","aging"],ingredientKey:"dwegf-cream",
    ingredient:{EN:"DW-EGF + hyaluronic acid",JA:"DW-EGF+ヒアルロン酸",ZH:"DW-EGF+透明质酸"},indication:{EN:"Vitalizing firming cream",JA:"ハリ・ツヤ クリーム",ZH:"活力紧致霜"},strength:"daily",price:[20000,40000],pregSafe:false,views:3100},
 
   /* — Dr.deep (Mineralhouse, mineral derma) — curated — */
-  {id:"ddmultiato",ko:"닥터딥 멀티아토크림",rom:"Dr.deep Multi-Ato Cream",maker:"Mineralhouse",cat:"COSMETIC",concerns:["barrier"],ingredientKey:"multiato",
+  {id:"ddmultiato",ko:"닥터딥 멀티아토크림",rom:"Dr.deep Multi-Ato Cream",maker:"Mineralhouse",cat:"COSMETIC",onlineSale:false,shopQ:"Dr.deep",malls:["amazon","amazonjp","qoo10jp"],concerns:["barrier"],ingredientKey:"multiato",
    ingredient:{EN:"Ionic minerals + centella",JA:"イオンミネラル+ツボクサ",ZH:"离子矿物质+积雪草"},indication:{EN:"Soothing barrier cream for dryness",JA:"乾燥ケアの鎮静バリアクリーム",ZH:"舒缓保湿屏障霜"},strength:"daily",price:[30000,38000],pregSafe:true,views:3300},
-  {id:"ddgluta",ko:"닥터딥 글루타치온 기미크림",rom:"Dr.deep Glutathione Spot Cream",maker:"Mineralhouse",cat:"COSMETIC",concerns:["pigment"],ingredientKey:"drdeep-gluta",
+  {id:"ddgluta",ko:"닥터딥 글루타치온 기미크림",rom:"Dr.deep Glutathione Spot Cream",maker:"Mineralhouse",cat:"COSMETIC",onlineSale:false,shopQ:"Dr.deep glutathione",malls:["amazon","amazonjp","qoo10jp"],concerns:["pigment"],ingredientKey:"drdeep-gluta",
    ingredient:{EN:"98% glutathione + arbutin",JA:"98%グルタチオン+アルブチン",ZH:"98%谷胱甘肽+熊果苷"},indication:{EN:"Melasma & spot brightening",JA:"シミ・肝斑の美白",ZH:"黄褐斑・色斑美白"},strength:"daily",price:[30000,48000],pregSafe:true,views:2700},
-  {id:"ddglowshot",ko:"닥터딥 미네랄 글로우샷 1500",rom:"Dr.deep Mineral Glow Shot 1500",maker:"Mineralhouse",cat:"COSMETIC",concerns:["aging"],ingredientKey:"lacto-exosome",
+  {id:"ddglowshot",ko:"닥터딥 미네랄 글로우샷 1500",rom:"Dr.deep Mineral Glow Shot 1500",maker:"Mineralhouse",cat:"COSMETIC",onlineSale:false,shopQ:"Dr.deep glow shot",malls:["amazon","amazonjp","qoo10jp"],concerns:["aging"],ingredientKey:"lacto-exosome",
    ingredient:{EN:"Lacto-exosome + PDRN",JA:"ラクト-エクソソーム+PDRN",ZH:"乳酸菌外泌体+PDRN"},indication:{EN:"Radiance & elasticity booster",JA:"ツヤ・ハリブースター",ZH:"光泽・弹力精华"},strength:"daily",price:[38000,50000],pregSafe:false,views:2900},
-  {id:"ddtt",ko:"닥터딥 TT 스팟크림",rom:"Dr.deep TT Spot Cream",maker:"Mineralhouse",cat:"COSMETIC",concerns:["acne"],ingredientKey:"tt-aha",
+  {id:"ddtt",ko:"닥터딥 TT 스팟크림",rom:"Dr.deep TT Spot Cream",maker:"Mineralhouse",cat:"COSMETIC",shopQ:"Dr.deep",malls:["amazon","amazonjp","qoo10jp"],mallLinks:{amazon:"https://www.amazon.com/s?i=merchant-items&me=A13S59VZS74181"},concerns:["acne"],ingredientKey:"tt-aha",
    ingredient:{EN:"AHA + PHA + LHA",JA:"AHA+PHA+LHA",ZH:"AHA+PHA+LHA"},indication:{EN:"Texture-refining cream for bumps & pores",JA:"ざらつき・毛穴の角質ケア",ZH:"粗糙・毛孔角质护理"},strength:"daily",price:[35000,44000],pregSafe:false,views:2500}
 ];
 
@@ -667,9 +668,9 @@ const canBuyOnline=p=>!isMed(p)&&p.onlineSale!==false;
    reference-only (ref:true) — discovery, no outside affiliate. */
 const AFF={ yesstyle:"", stylevana:"", oliveyoung:"", amazon:"", amazonjp:"", qoo10jp:"" };
 const MALLS={
-  yesstyle:{label:"YesStyle", tmpl:"https://www.yesstyle.com/en/search.html?q={q}"},
+  yesstyle:{label:"YesStyle", tmpl:"https://www.yesstyle.com/en/list.html?q={q}"},
   stylevana:{label:"Stylevana", tmpl:"https://www.stylevana.com/en_US/catalogsearch/result/?q={q}"},
-  oliveyoung:{label:"OLIVE YOUNG Global", tmpl:"https://global.oliveyoung.com/search?query={q}"},
+  oliveyoung:{label:"OLIVE YOUNG Global", tmpl:"https://global.oliveyoung.com/display/search?query={q}"},
   amazon:{label:"Amazon", tmpl:"https://www.amazon.com/s?k={q}"},
   amazonjp:{label:"Amazon JP", tmpl:"https://www.amazon.co.jp/s?k={q}"},
   qoo10jp:{label:"Qoo10 Japan", tmpl:"https://www.qoo10.jp/s?keyword={q}"},
@@ -677,15 +678,18 @@ const MALLS={
   tmallglobal:{label:"Tmall Global", ref:true, tmpl:"https://www.tmall.hk/search.htm?q={q}"}
 };
 const REGION_MALLS={
-  west:  ["yesstyle","stylevana","oliveyoung","amazon"],
-  japan: ["qoo10jp","oliveyoung","amazonjp","yesstyle"],
+  west:  ["yesstyle","oliveyoung","amazon","qoo10jp"],
+  japan: ["qoo10jp","amazonjp","oliveyoung","yesstyle"],
   china: ["xiaohongshu","tmallglobal","oliveyoung"],
-  sea:   ["yesstyle","stylevana","oliveyoung"],
-  other: ["yesstyle","oliveyoung","stylevana"]
+  sea:   ["yesstyle","oliveyoung","qoo10jp","amazon"],
+  other: ["yesstyle","oliveyoung","amazon","qoo10jp"]
 };
 function buyLinksFor(p,region){
-  const keys=REGION_MALLS[region]||REGION_MALLS.other;
-  const q=encodeURIComponent(p.rom||p.ko||"");
+  const regionKeys=REGION_MALLS[region]||REGION_MALLS.other;
+  const q=encodeURIComponent(p.shopQ||p.rom||p.ko||"");
+  // direct-purchase malls limited to verified brand carriers (p.malls); discovery malls (ref) always shown
+  let keys=regionKeys.filter(k=>{ const m=MALLS[k]; if(!m) return false; if(m.ref) return true; return p.malls? p.malls.includes(k): true; });
+  if(!keys.length && p.malls) keys=p.malls.slice();   // region has no carrier → fall back to brand carriers
   return keys.map(k=>{
     const m=MALLS[k]; if(!m) return null;
     const url=(p.mallLinks&&p.mallLinks[k]) || (m.tmpl.replace("{q}",q)+(AFF[k]||""));
@@ -762,7 +766,9 @@ function productCard(p,opts={}){
   const saveBtn=`<button class="savebtn" aria-pressed="${sv}" aria-label="${t(sv?"saved":"save")}" onclick="event.stopPropagation();saveToggle('${p.id}')"><svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" fill="${sv?"currentColor":"none"}" stroke-linejoin="round"><path d="M6 4h12a1 1 0 0 1 1 1v16l-7-4-7 4V5a1 1 0 0 1 1-1z"/></svg></button>`;
   return `<div class="card${memberCls}"><div class="card-row" onclick="openDetail('${p.id}')">${rank}
     <div class="card-body"><div class="pname">${p.ko} <span class="prom">${p.rom}</span>${pickBadge}${repBadge}${rgnChip}</div>
-    <div class="pmeta">${meta}</div>${matchLine}${famNote}</div>${tier}${badge(p.cat)}${saveBtn}${sel}</div></div>`;
+    <div class="pmeta">${meta}</div>${matchLine}${famNote}
+    <div class="card-tags">${badge(p.cat)}${tier}</div></div>
+    <div class="card-actions">${saveBtn}${sel}</div></div></div>`;
 }
 /* Group a (filtered, sorted) list by ingredientKey; the rep-flagged item leads
    each group, same-ingredient siblings are nested beneath it. */
